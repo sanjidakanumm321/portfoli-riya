@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Responsive Personal Portfolio Website</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Boxicons -->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- header design -->
+<header class="header">
+    <a href="#" class="logo">portfolio</a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    
+
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+       
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+<!--home section desing-->
+<section class="home">
+        <div class="container">
+            
+            <div class="home-content">
+                <p class="hello-text">Hello, I'm</p>
+                <h1 class="user-name">Sanjida khanum</h1>
+                <h2 class="role-text">Web Developer</h2>
+                <p class="bio-text">
+                    I create beautiful, responsive web applications with modern technologies. 
+                    Passionate about clean code, user experience, and bringing ideas to life.
+                </p>
+                
+                <div class="btn-container">
+                    <a href="img/ria.pdf" class="btn-blue">Download</a>
+                
+                </div>
+            </div>
+
+            <div class="home-image">
+                <div class="image-wrapper">
+                    <img src="img/ME.jpeg" alt="Profile Picture">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+<!--home sectuin end-->
+<!--about section-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img/anput.jpeg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+              <h3> <p>
+                   I am a dedicated Web Developer with experience in 
+                   designing and developing responsive websites. I
+                    use HTML, CSS, JavaScript, and Bootstrap to build modern and user-friendly websites. I enjoy creating clean and attractive
+                      designs and turning ideas into fully functional websites.
+                      I always try to improve my skills and learn new technologies.</p></h3>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills', this)">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience', this)">Experience</p>
+                    <p class="tab-links" onclick="opentab('education', this)">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Design</span><br>HTML, CSS, Bootstrap, WordPress</li>
+                        <li><span>Web Development</span><br>JavaScript, Web App Development</li>
+                        <li><span>UI/UX Design</span><br>Designing Web/App Interfaces</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Web Design Practice & Projects</li>
+                        <li><span>2022 - 2023</span><br>Learning HTML, CSS, JavaScrip</li>
+                        <li><span>2021 - 2022</span><br>WordPress Design</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Diploma</span><br>Computer Technology</li>
+                        <li><span>Web Development</span><br>Online Training</li>
+                        <li><span>UI/UX</span><br>Practice & Self Learning</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--about section end-->
+
+<!--skill -->
+<section class="expert-section" >
+        <h2 class="title">My Expert Area</h2>
+        
+        <div class="icon-wrapper">
+            <div class="icon-box">
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png" alt="JS">
+            </div>
+            <div class="icon-box">
+                <img src="https://brandlogos.net/wp-content/uploads/2021/09/bootstrap-logo.png" alt="Bootstrap">
+            </div>
+            <div class="icon-box">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/jquery-10-1175155.png" alt="jQuery">
+            </div>
+            <div class="icon-box">
+                <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git">
+            </div>
+            <div class="icon-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="PS">
+            </div>
+            <div class="icon-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma">
+            </div>
+            <div class="icon-box">
+                <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="HTML5">
+            </div>
+        </div>
+    </section>
+<!--skill end-->
+<!---------contact-------->
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+<h1 class="sub-title">contact me</h1>
+<p><i class="fas fa-paper-plane"></i>sanjida123@gmail.com</p>
+<p><i class="fas fa-phone-square-alt"></i>01987654678</p>
+<div class="social-icons">
+    <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href=""><i class="fa-brands fa-twitter"></i></a>
+    <a href=""><i class="fa-brands fa-instagram"></i></a>
+    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+</div>
+<a href="img/sanjida.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+             <div class="contact-right">
+<form >
+<input type="text" name="Name" placeholder=" You name" required>
+<input type="email" name="email" placeholder=" You email" required>
+<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+<button type="submit" class="btn btn2">Submit</button>
+
+</form>
+            </div>
+        </div>
+    </div>
+ <div class="copyright">
+    <p>
+        © 2026 All Rights Reserved | Made with 
+        <i class="fas fa-heart"></i> 
+        by Sanjida Khanum
+    </p>
+</div>
+<!--contact end-->
+<script src="js/script.js"></script>
+</body>
+</html>
